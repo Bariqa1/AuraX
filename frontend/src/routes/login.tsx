@@ -12,10 +12,10 @@ export const Route = createFileRoute("/login")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "تسجيل الدخول | دِراية — DIRAYA" },
-      { name: "description", content: "سجّل الدخول إلى منصة دِراية لمراقبة السلامة وإدارة المخاطر استباقيًا." },
-      { property: "og:title", content: "تسجيل الدخول | دِراية — DIRAYA" },
-      { property: "og:description", content: "الدخول إلى منصة ذكاء السلامة دِراية." },
+      { title: "تسجيل الدخول | AuraX" },
+      { name: "description", content: "سجّل الدخول إلى منصة AuraX لمراقبة السلامة وإدارة المخاطر استباقيًا." },
+      { property: "og:title", content: "تسجيل الدخول | AuraX" },
+      { property: "og:description", content: "الدخول إلى منصة ذكاء السلامة AuraX." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/login")({
 const translations = {
   ar: {
     title: "مرحبًا بعودتك",
-    subtitle: "سجّل الدخول إلى دِراية",
+    subtitle: "سجّل الدخول إلى AuraX",
     email: "البريد الإلكتروني",
     emailPlaceholder: "أدخل بريدك الإلكتروني",
     password: "كلمة المرور",
@@ -41,7 +41,7 @@ const translations = {
     requiredEmail: "البريد الإلكتروني مطلوب.",
     requiredPassword: "كلمة المرور مطلوبة.",
     invalidCredentials: "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
-    visualTitle: "دِراية بالخطر، حماية لهم",
+    visualTitle: "AuraX: استباق للخطر، وحماية لهم",
     visualBody: "لأن خلف كل خوذة عائلة تنتظر، نسخر التقنية لتحمي الحياة أولاً",
     back: "العودة",
     show: "إظهار كلمة المرور",
@@ -49,7 +49,7 @@ const translations = {
   },
   en: {
     title: "Welcome back",
-    subtitle: "Sign in to your DIRAYA account",
+    subtitle: "Sign in to your AuraX account",
     email: "Email",
     emailPlaceholder: "Enter your email",
     password: "Password",
@@ -80,7 +80,7 @@ function LoginPage() {
   const navigate = useNavigate();
   const arabic = isArabic(lang);
   const copy = translations[lang];
-  const [email, setEmail] = useState("demo@diraya.ai");
+  const [email, setEmail] = useState("demo@aurax.ai");
   const [password, setPassword] = useState("Demo123!");
   const [remember, setRemember] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -105,7 +105,8 @@ function LoginPage() {
 
     setSubmitting(true);
     window.setTimeout(() => {
-      if (email.trim().toLowerCase() === "demo@diraya.ai" && password === "Demo123!") {
+      const normalizedEmail = email.trim().toLowerCase();
+      if ((normalizedEmail === "demo@aurax.ai" || normalizedEmail === "demo@diraya.ai") && password === "Demo123!") {
         navigate({ to: "/overview", search: { lang } });
         return;
       }
@@ -152,7 +153,7 @@ function LoginPage() {
                 {arabic ? "💡 حساب تجريبي للتحكيم (معبأ تلقائياً)" : "💡 Demo Credentials (Pre-filled)"}
               </span>
               <span className="font-mono text-[11px] text-muted-foreground">
-                demo@diraya.ai / Demo123!
+                demo@aurax.ai / Demo123!
               </span>
             </div>
 
@@ -198,7 +199,7 @@ function LoginPage() {
             </p>
           </div>
         </div>
-        <p className="text-center text-xs text-muted-foreground/65">DIRAYA · {arabic ? "نظام ذكي للسلامة الصناعية" : "Smart system for industrial safety"}</p>
+        <p className="text-center text-xs text-muted-foreground/65">AuraX · {arabic ? "نظام ذكي للسلامة الصناعية" : "Smart system for industrial safety"}</p>
       </section>
     </main>
   );

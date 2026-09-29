@@ -7,9 +7,9 @@ export const Route = createFileRoute("/risk-map")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "المخاطر وصلاحيات الدخول | دِراية — DIRAYA" },
+      { title: "المخاطر وصلاحيات الدخول | AuraX" },
       { name: "description", content: "مناطق المخاطر وصلاحيات الدخول وألوان الخوذ في بيئة العمل." },
-      { property: "og:title", content: "Risks & Access Permissions | DIRAYA" },
+      { property: "og:title", content: "Risks & Access Permissions | AuraX" },
       { property: "og:description", content: "Workplace zones, physical RBAC, and current risk levels." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -93,8 +93,8 @@ export const analyticsRanges: AnalyticsRange[] = [
         fc(d("+7 يوم", "+7d"), null, 21, [14, 28]),
       ],
       insight: d(
-        "تتوقع دِراية ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
-        "DIRAYA predicts an increase in risk levels in Zone C over the coming days.",
+        "تتوقع AuraX ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
+        "AuraX predicts an increase in risk levels in Zone C over the coming days.",
       ),
     },
   },
@@ -128,8 +128,8 @@ export const analyticsRanges: AnalyticsRange[] = [
         fc(d("+7 يوم", "+7d"), null, 34, [26, 43]),
       ],
       insight: d(
-        "تتوقع دِراية ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
-        "DIRAYA predicts an increase in risk levels in Zone C over the coming days.",
+        "تتوقع AuraX ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
+        "AuraX predicts an increase in risk levels in Zone C over the coming days.",
       ),
     },
   },
@@ -159,8 +159,8 @@ export const analyticsRanges: AnalyticsRange[] = [
         fc(d("+7 يوم", "+7d"), null, 142, [122, 164]),
       ],
       insight: d(
-        "تتوقع دِراية ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
-        "DIRAYA predicts an increase in risk levels in Zone C over the coming days.",
+        "تتوقع AuraX ارتفاع مستوى المخاطر في المنطقة C خلال الأيام القادمة.",
+        "AuraX predicts an increase in risk levels in Zone C over the coming days.",
       ),
     },
   },

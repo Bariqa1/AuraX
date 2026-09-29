@@ -61,7 +61,7 @@ const severityStyles: Record<AlertSeverity, string> = {
 
 export const Route = createFileRoute("/alerts")({
   validateSearch: localeSearch,
-  head: () => ({ meta: [{ title: "سجل التنبيهات | دِراية — DIRAYA" }, { name: "description", content: "جميع تنبيهات السلامة المرصودة وحالة الاستجابة لها." }, { property: "og:title", content: "Alert Log | DIRAYA" }, { property: "og:description", content: "All detected safety alerts and their response status." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "سجل التنبيهات | AuraX" }, { name: "description", content: "جميع تنبيهات السلامة المرصودة وحالة الاستجابة لها." }, { property: "og:title", content: "Alert Log | AuraX" }, { property: "og:description", content: "All detected safety alerts and their response status." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Page,
 });
 

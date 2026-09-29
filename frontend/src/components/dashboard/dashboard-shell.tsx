@@ -162,7 +162,7 @@ function DashboardWordmark({ locale }: { locale: Locale }) {
   return (
     <div className="flex items-center gap-3 text-foreground">
       <DashboardMark className="size-10" />
-      <p className={cn("font-display text-xl font-bold", locale === "ar" && "font-arabic")}>{locale === "ar" ? "دِراية" : "DIRAYA"}</p>
+      <p className={cn("font-display text-xl font-bold", locale === "ar" && "font-arabic")}>AuraX</p>
     </div>
   );
 }

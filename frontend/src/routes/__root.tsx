@@ -78,9 +78,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "دِراية | DIRAYA" },
-      { name: "description", content: "DIRAYA is an AI-powered workplace safety monitoring and proactive risk management platform." },
-      { property: "og:title", content: "دِراية | DIRAYA" },
+      { title: "AuraX" },
+      { name: "description", content: "AuraX is an AI-powered workplace safety monitoring and proactive risk management platform." },
+      { property: "og:title", content: "AuraX" },
       { property: "og:description", content: "From detection to prevention — proactive safety intelligence for industrial environments." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

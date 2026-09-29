@@ -33,13 +33,13 @@ export const Route = createFileRoute("/")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "دِراية | DIRAYA — نكتشف الخطر، ونمنع الحادث" },
+      { title: "AuraX — نكتشف الخطر، ونمنع الحادث" },
       {
         name: "description",
         content:
           "منصة ذكية للسلامة المهنية تستخدم الذكاء الاصطناعي لرصد المخاطر وتحليلها والتنبؤ بها قبل أن تتحول إلى حوادث.",
       },
-      { property: "og:title", content: "دِراية | DIRAYA — نكتشف الخطر، ونمنع الحادث" },
+      { property: "og:title", content: "AuraX — نكتشف الخطر، ونمنع الحادث" },
       {
         property: "og:description",
         content: "رصد لحظي، تحليل للأنماط، وتنبؤ بالمخاطر لدعم فرق السلامة بقرارات مبنية على البيانات.",
@@ -55,15 +55,15 @@ const copy = {
   ar: {
     nav: { vision: "رؤيتنا", goals: "الأهداف", how: "كيف تعمل", login: "تسجيل الدخول" },
     hero: {
-      headline: "دِراية بالخطر، حماية لهم",
-      body: "الأرواح ليست أرقامًا، وخلف كل عامل عائلة تنتظر عودته. بالدِراية، نفهم المخاطر ونستبقها، لنساهم في بيئة عمل أكثر أمانًا يعود منها الجميع سالمين",
+      headline: "AuraX: استباق للخطر، وحماية لهم",
+      body: "الأرواح ليست أرقامًا، وخلف كل عامل عائلة تنتظر عودته. مع AuraX، نفهم المخاطر ونستبقها، لنساهم في بيئة عمل أكثر أمانًا يعود منها الجميع سالمين",
       primary: "احمِ فريقك الآن",
-      secondary: "اكتشف دِراية",
+      secondary: "اكتشف AuraX",
       flow: ["رصد", "فهم وتحليل", "تنبؤ", "وقاية"],
     },
     what: {
-      title: "ما هي دِراية؟",
-      body: "دِراية نظام ذكي للسلامة الصناعية يفهم ما يحدث في بيئة العمل ويربط سياق المهمة بمتطلبات السلامة للتحقق من الالتزام ورصد المخاطر لحظيًا، كما يحلل البيانات والأنماط للتنبؤ بمستويات الخطر ودعم الوقاية من الحوادث.",
+      title: "ما هو نظام AuraX؟",
+      body: "AuraX نظام ذكي للسلامة الصناعية يفهم ما يحدث في بيئة العمل ويربط سياق المهمة بمتطلبات السلامة للتحقق من الالتزام ورصد المخاطر لحظيًا، كما يحلل البيانات والأنماط للتنبؤ بمستويات الخطر ودعم الوقاية من الحوادث.",
       cards: [
         { title: "رصد", body: "اكتشاف المخاطر ومخالفات السلامة لحظيًا في بيئة العمل." },
         { title: "فهم وتحليل", body: "فهم سياق العمل، وتحليل الأنماط لتحديد المناطق والأوقات الأكثر خطورة." },
@@ -73,10 +73,10 @@ const copy = {
     vision: {
       title: "رؤيتنا",
       statement: "من التعامل مع الحوادث بعد وقوعها، إلى الوقاية منها قبل حدوثها.",
-      body: "تهدف دِراية إلى اكتشاف مؤشرات الخطر مبكرًا، وفهمها وتحليلها، للمساعدة على اتخاذ إجراءات وقائية قبل وقوع الحوادث.",
-      reactiveLabel: "بدون دِراية",
+      body: "تهدف منصة AuraX إلى اكتشاف مؤشرات الخطر مبكرًا، وفهمها وتحليلها، للمساعدة على اتخاذ إجراءات وقائية قبل وقوع الحوادث.",
+      reactiveLabel: "بدون AuraX",
       reactive: ["حادث", "تحقيق", "إجراء"],
-      dirayaLabel: "دِراية",
+      dirayaLabel: "AuraX",
       diraya: ["رصد", "فهم وتحليل", "تنبؤ", "وقاية"],
     },
     goals: {
@@ -89,7 +89,7 @@ const copy = {
       ],
     },
     how: {
-      title: "كيف تعمل دِراية؟",
+      title: "كيف يعمل نظام AuraX؟",
       subtitle: "عدة وكلاء ذكيين يعملون معًا لتحويل البيانات إلى قرارات.",
       
       source: "الكاميرا",
@@ -121,7 +121,7 @@ const copy = {
         },
         {
           name: "المساعد الذكي",
-          en: "DIRAYA AI ASSISTANT",
+          en: "AURAX AI ASSISTANT",
           role: "يحوّل نتائج الوكلاء والبيانات إلى إجابات وتوصيات مفهومة لمسؤولي السلامة.",
           tags: ["إجابات مباشرة", "توصيات عملية"],
         },
@@ -130,21 +130,21 @@ const copy = {
       question: "وش أكثر منطقة تحتاج تدخل اليوم؟",
       answer: "المنطقة C تظهر أعلى مستوى خطر حاليًا بناءً على التنبيهات والأنماط المسجلة.",
     },
-    cta: { title: "جاهز لتجربة دِراية؟", body: "لأن الوقاية تبدأ بدِراية.", action: "تسجيل الدخول" },
+    cta: { title: "جاهز لتجربة AuraX؟", body: "لأن الوقاية تبدأ مع AuraX.", action: "تسجيل الدخول" },
     footerNote: "نظام ذكي للسلامة الصناعية",
   },
   en: {
     nav: { vision: "Vision", goals: "Goals", how: "How It Works", login: "Login" },
     hero: {
       headline: "Aware of the Risk. Protecting Them.",
-      body: "Lives are not numbers, and behind every worker is a family waiting for their return. With DIRAYA, we understand risks and act ahead of them, contributing to a safer workplace where everyone returns home unharmed.",
+      body: "Lives are not numbers, and behind every worker is a family waiting for their return. With AuraX, we understand risks and act ahead of them, contributing to a safer workplace where everyone returns home unharmed.",
       primary: "Get Started",
-      secondary: "Explore DIRAYA",
+      secondary: "Explore AuraX",
       flow: ["Detection", "Understanding & Analysis", "Prediction", "Prevention"],
     },
     what: {
-      title: "What is DIRAYA?",
-      body: "DIRAYA is a smart industrial safety system that understands what happens in the work environment, links task context to safety requirements to verify compliance and detect risks in real time, and analyzes data and patterns to predict risk levels and support incident prevention.",
+      title: "What is AuraX?",
+      body: "AuraX is a smart industrial safety system that understands what happens in the work environment, links task context to safety requirements to verify compliance and detect risks in real time, and analyzes data and patterns to predict risk levels and support incident prevention.",
       cards: [
         { title: "Detection", body: "Detecting hazards and safety violations in real time in the work environment." },
         { title: "Understanding & Analysis", body: "Understand work context and analyze patterns to identify the riskiest areas and times." },
@@ -154,10 +154,10 @@ const copy = {
     vision: {
       title: "Our Vision",
       statement: "From reacting to incidents after they occur, to preventing them before they happen.",
-      body: "DIRAYA aims to detect early warning signs, understand and analyze them, helping take preventive actions before incidents occur.",
+      body: "AuraX aims to detect early warning signs, understand and analyze them, helping take preventive actions before incidents occur.",
       reactiveLabel: "Reactive safety",
       reactive: ["Incident", "Investigation", "Action"],
-      dirayaLabel: "DIRAYA",
+      dirayaLabel: "AuraX",
       diraya: ["Detection", "Understanding & Analysis", "Prediction", "Prevention"],
     },
     goals: {
@@ -170,7 +170,7 @@ const copy = {
       ],
     },
     how: {
-      title: "How does DIRAYA work?",
+      title: "How does AuraX work?",
       subtitle: "Multiple AI agents work together to turn safety data into actionable decisions.",
       
       source: "Camera",
@@ -201,8 +201,8 @@ const copy = {
           tags: ["Historical patterns", "Predicted areas", "Critical periods"],
         },
         {
-          name: "DIRAYA AI Assistant",
-          en: "DIRAYA AI ASSISTANT",
+          name: "AuraX AI Assistant",
+          en: "AURAX AI ASSISTANT",
           role: "Turns agent outputs and safety data into clear answers and recommendations for safety officers.",
           tags: ["Direct answers", "Practical recommendations"],
         },
@@ -211,7 +211,7 @@ const copy = {
       question: "Which area needs intervention most today?",
       answer: "Zone C currently shows the highest risk level based on recorded alerts and patterns.",
     },
-    cta: { title: "Ready to experience DIRAYA?", body: "Because prevention starts with DIRAYA.", action: "Login" },
+    cta: { title: "Ready to experience AuraX?", body: "Because prevention starts with AuraX.", action: "Login" },
     footerNote: "Smart system for industrial safety",
   },
 } as const;
@@ -254,7 +254,7 @@ function LandingPage() {
         <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2.5 text-navy">
             <DirayaMark variant="navy" className="size-11" />
-            <span className={cn("font-display text-xl font-bold", arabic && "font-tajawal")}>{arabic ? "دِراية" : "DIRAYA"}</span>
+            <span className={cn("font-display text-xl font-bold", arabic && "font-tajawal")}>AuraX</span>
           </div>
           <nav className="hidden items-center gap-1 md:flex">
             {[
@@ -315,7 +315,7 @@ function LandingPage() {
             </div>
             <div className="mt-6 flex items-center gap-4">
               <DirayaMark variant="white" className="size-12" />
-              <p className={cn(heading, "text-2xl")}>{arabic ? "دِراية | DIRAYA" : "DIRAYA | دِراية"}</p>
+              <p className={cn(heading, "text-2xl")}>AuraX</p>
             </div>
             <h1 className={cn(heading, "mt-6 text-4xl leading-tight sm:text-6xl")}>{t.hero.headline}</h1>
             <p className="mt-5 max-w-xl text-base leading-8 text-navy-foreground/75 sm:text-lg">{t.hero.body}</p>
@@ -331,7 +331,7 @@ function LandingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => scrollToSection("what-is-diraya")}
+                onClick={() => scrollToSection("what-is-aurax")}
                 className="h-12 min-w-36 rounded-md border-navy-foreground/20 bg-transparent px-5 text-base font-semibold text-navy-foreground/80 hover:bg-navy-foreground/10 hover:text-navy-foreground"
               >
                 {t.hero.secondary}
@@ -367,8 +367,8 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* WHAT IS DIRAYA */}
-      <section id="what-is-diraya" className="scroll-mt-20 border-b border-border bg-background py-20">
+      {/* WHAT IS AURAX */}
+      <section id="what-is-aurax" className="scroll-mt-20 border-b border-border bg-background py-20">
         <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-10">
           <h2 className={cn(heading, "text-3xl sm:text-4xl")}>{t.what.title}</h2>
           <p className="mt-4 max-w-3xl text-base leading-8 text-muted-foreground">{t.what.body}</p>
@@ -558,7 +558,7 @@ function LandingPage() {
       <footer className="border-t border-border bg-background py-8">
         <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-3 px-4 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-10">
           <p>{t.footerNote}</p>
-          <p>DIRAYA © 2026</p>
+          <p>AuraX © 2026</p>
         </div>
       </footer>
     </main>

@@ -13,10 +13,10 @@ export const Route = createFileRoute("/signup")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "إنشاء حساب | دِراية — DIRAYA" },
-      { name: "description", content: "أنشئ حسابًا جديدًا في منصة دِراية للسلامة الصناعية." },
-      { property: "og:title", content: "إنشاء حساب | دِراية — DIRAYA" },
-      { property: "og:description", content: "Create your DIRAYA industrial safety account." },
+      { title: "إنشاء حساب | AuraX" },
+      { name: "description", content: "أنشئ حسابًا جديدًا في منصة AuraX للسلامة الصناعية." },
+      { property: "og:title", content: "إنشاء حساب | AuraX" },
+      { property: "og:description", content: "Create your AuraX industrial safety account." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/signup")({
 const translations = {
   ar: {
     title: "إنشاء حساب",
-    subtitle: "أنشئ حسابك للانضمام إلى دِراية",
+    subtitle: "أنشئ حسابك للانضمام إلى AuraX",
     fullName: "الاسم الكامل",
     fullNamePlaceholder: "أدخل الاسم الكامل",
     email: "البريد الإلكتروني",
@@ -55,13 +55,13 @@ const translations = {
     longValue: "القيمة المدخلة طويلة جدًا.",
     weakPassword: "استخدم 8 أحرف على الأقل تتضمن حرفًا كبيرًا وصغيرًا ورقمًا.",
     mismatch: "كلمتا المرور غير متطابقتين.",
-    visualTitle: "دِراية بالخطر، حماية لهم",
+    visualTitle: "AuraX: استباق للخطر، وحماية لهم",
     visualBody: "لأن خلف كل خوذة عائلة تنتظر، نسخر التقنية لتحمي الحياة أولاً",
     monitor: "نظام مراقبة ذكي",
   },
   en: {
     title: "Create an account",
-    subtitle: "Create your account to join DIRAYA",
+    subtitle: "Create your account to join AuraX",
     fullName: "Full name",
     fullNamePlaceholder: "Enter your full name",
     email: "Email",
@@ -217,7 +217,7 @@ function SignupPage() {
             <p className="mt-7 text-center text-sm text-muted-foreground">{copy.hasAccount} <Link to="/login" search={{ lang }} className="font-semibold text-primary hover:underline">{copy.signIn}</Link></p>
           </div>
         </div>
-        <p className="text-center text-xs text-muted-foreground/65">DIRAYA · {arabic ? "نظام ذكي للسلامة الصناعية" : "Smart system for industrial safety"}</p>
+        <p className="text-center text-xs text-muted-foreground/65">AuraX · {arabic ? "نظام ذكي للسلامة الصناعية" : "Smart system for industrial safety"}</p>
       </section>
     </main>
   );

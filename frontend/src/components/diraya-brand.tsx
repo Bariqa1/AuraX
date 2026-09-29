@@ -6,7 +6,7 @@ export type LogoVariant = "navy" | "white" | "auto";
 export function DirayaMark({
   className,
   variant = "navy",
-  alt = "شعار دِراية",
+  alt = "شعار AuraX",
 }: {
   className?: string;
   variant?: LogoVariant;
@@ -19,7 +19,7 @@ export function DirayaMark({
         className={cn("flex size-10 shrink-0 items-center justify-center p-0.5", className)}
       >
         <img
-          src="/diraya-logo-white.png"
+          src="/aurax-logo-white.png"
           alt={alt}
           className="size-full object-contain drop-shadow-sm"
         />
@@ -34,7 +34,7 @@ export function DirayaMark({
         className={cn("flex size-10 shrink-0 items-center justify-center p-0.5", className)}
       >
         <img
-          src="/diraya-logo-navy.png"
+          src="/aurax-logo-navy.png"
           alt={alt}
           className="size-full object-contain"
         />
@@ -49,12 +49,12 @@ export function DirayaMark({
       className={cn("flex size-10 shrink-0 items-center justify-center p-0.5", className)}
     >
       <img
-        src="/diraya-logo-navy.png"
+        src="/aurax-logo-navy.png"
         alt={alt}
         className="size-full object-contain dark:hidden"
       />
       <img
-        src="/diraya-logo-white.png"
+        src="/aurax-logo-white.png"
         alt={alt}
         className="hidden size-full object-contain dark:block drop-shadow-sm"
       />
@@ -82,7 +82,7 @@ export function DirayaWordmark({
       <DirayaMark variant={variant} className="size-11" />
       <div className="leading-none">
         <p className={cn("font-display text-xl font-bold tracking-tight", arabic && arabicFont)}>
-          {arabic ? "دِراية" : "DIRAYA"}
+          AuraX
         </p>
         {!compact ? (
           <p className={cn("mt-2 text-[11px] font-medium text-current/60", !arabic && "uppercase tracking-[0.16em]")}>
@@ -93,3 +93,6 @@ export function DirayaWordmark({
     </div>
   );
 }
+
+export const AuraXMark = DirayaMark;
+export const AuraXWordmark = DirayaWordmark;

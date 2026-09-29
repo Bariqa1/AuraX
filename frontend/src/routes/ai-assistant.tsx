@@ -7,10 +7,10 @@ export const Route = createFileRoute("/ai-assistant")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "المساعد الذكي | دِراية — DIRAYA" },
-      { name: "description", content: "مساعد دِراية الذكي للإجابة عن أسئلة السلامة المهنية وتقييم المخاطر." },
-      { property: "og:title", content: "AI Assistant | DIRAYA" },
-      { property: "og:description", content: "Ask DIRAYA AI about workplace safety, hazards, PPE and emergency procedures." },
+      { title: "المساعد الذكي | AuraX" },
+      { name: "description", content: "مساعد AuraX الذكي للإجابة عن أسئلة السلامة المهنية وتقييم المخاطر." },
+      { property: "og:title", content: "AI Assistant | AuraX" },
+      { property: "og:description", content: "Ask AuraX AI about workplace safety, hazards, PPE and emergency procedures." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],

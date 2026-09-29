@@ -7,9 +7,9 @@ export const Route = createFileRoute("/incidents")({
   validateSearch: localeSearch,
   head: () => ({
     meta: [
-      { title: "سجل الحوادث | دِراية — DIRAYA" },
-      { name: "description", content: "السجل الكامل للحوادث والمخالفات المسجلة في منصة دِراية لمراقبة السلامة." },
-      { property: "og:title", content: "Incident Log | DIRAYA" },
+      { title: "سجل الحوادث | AuraX" },
+      { name: "description", content: "السجل الكامل للحوادث والمخالفات المسجلة في منصة AuraX لمراقبة السلامة." },
+      { property: "og:title", content: "Incident Log | AuraX" },
       { property: "og:description", content: "Complete record of detected workplace safety incidents and violations." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

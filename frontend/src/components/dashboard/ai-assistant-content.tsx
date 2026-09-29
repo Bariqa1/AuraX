@@ -23,11 +23,11 @@ type ChatMessage = {
 const copy = {
   ar: {
     title: "المساعد الذكي للسلامة",
-    subtitle: "اسأل دِراية عن السلامة، تقييم المخاطر، واللوائح المعتمدة (مدعوم بوكلاء دِراية)",
-    assistant: "وكيل دِراية للسلامة",
+    subtitle: "اسأل AuraX عن السلامة، تقييم المخاطر، واللوائح المعتمدة (مدعوم بوكلاء AuraX)",
+    assistant: "وكيل AuraX للسلامة",
     you: "أنت",
     welcome:
-      "مرحبًا! أنا مساعد دِراية الذكي للسلامة الصناعية. أستطيع تزويدك بمتطلبات معدات الوقاية (PPE)، تقييم مناطق الخطر، تصاريح العمل، وإجراءات السلامة المهنية فورياً. كيف يمكنني خدمتك اليوم؟",
+      "مرحبًا! أنا مساعد AuraX الذكي للسلامة الصناعية. أستطيع تزويدك بمتطلبات معدات الوقاية (PPE)، تقييم مناطق الخطر، تصاريح العمل، وإجراءات السلامة المهنية فورياً. كيف يمكنني خدمتك اليوم؟",
     placeholder: "اكتب سؤالك هنا (مثال: ما هي معدات الوقاية المطلوبة في منطقة اللحام؟)...",
     send: "إرسال",
     typing: "وكيل السلامة يبحث في القواعد والأنظمة...",
@@ -45,11 +45,11 @@ const copy = {
   },
   en: {
     title: "AI Safety Assistant",
-    subtitle: "Ask DIRAYA about workplace safety, risk assessment, and standards (Powered by Diraya Agents)",
-    assistant: "DIRAYA Safety Agent",
+    subtitle: "Ask AuraX about workplace safety, risk assessment, and standards (Powered by AuraX Agents)",
+    assistant: "AuraX Safety Agent",
     you: "You",
     welcome:
-      "Hello! I’m DIRAYA AI Safety Assistant. I can provide required PPE equipment, zone authorizations, emergency procedures, and regulatory requirements. How can I assist you?",
+      "Hello! I’m AuraX AI Safety Assistant. I can provide required PPE equipment, zone authorizations, emergency procedures, and regulatory requirements. How can I assist you?",
     placeholder: "Type your question here (e.g., What PPE is required in Welding Area?)...",
     send: "Send",
     typing: "Safety Agent consulting rules and knowledge base...",
@@ -95,8 +95,8 @@ function getFallbackAnswer(prompt: string, arabic: boolean): { answer: string; t
   }
   return {
     answer: arabic
-      ? "نظام دِراية يراقب بيئة العمل بشكل مستمر: تأكد دائماً من ارتداء الخوذة الواقية وحذاء السلامة والسترة العاكسة عند التواجد في كافة أرجاء المنشأة، والالتزام بلوحات التحذير المحيطة."
-      : "DIRAYA continuous safety monitoring: Always maintain standard PPE (Hard Hat, High-Vis Vest, Safety Shoes) in all facility zones, and strictly obey posted warning perimeters.",
+      ? "نظام AuraX يراقب بيئة العمل بشكل مستمر: تأكد دائماً من ارتداء الخوذة الواقية وحذاء السلامة والسترة العاكسة عند التواجد في كافة أرجاء المنشأة، والالتزام بلوحات التحذير المحيطة."
+      : "AuraX continuous safety monitoring: Always maintain standard PPE (Hard Hat, High-Vis Vest, Safety Shoes) in all facility zones, and strictly obey posted warning perimeters.",
     tools_used: ["search_safety_manual"],
   };
 }
@@ -148,7 +148,7 @@ export function AIAssistantContent({ locale }: { locale: Locale }) {
       }
 
       const data = await response.json();
-      const answer = data.answer || "تمت المعالجة بنجاح بواسطة وكيل دِراية.";
+      const answer = data.answer || "تمت المعالجة بنجاح بواسطة وكيل AuraX.";
       const toolsUsed = Array.isArray(data.tools_used) ? data.tools_used : [];
       const sources = Array.isArray(data.sources) ? data.sources : [];
 

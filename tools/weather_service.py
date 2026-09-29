@@ -1,4 +1,4 @@
-"""Weather and Geocoding Service for DIRAYA.
+"""Weather and Geocoding Service for AuraX.
 
 Fetches live atmospheric conditions from Open-Meteo API (free, no API key required)
 and reverse geocodes facility/worker coordinates using OpenStreetMap Nominatim.
@@ -95,7 +95,7 @@ class WeatherService:
             "addressdetails": 1,
             "zoom": 18,
         }
-        headers = {"User-Agent": "DIRAYA-Safety-Agent/1.0"}
+        headers = {"User-Agent": "AuraX-Safety-Agent/1.0"}
 
         try:
             resp = requests.get(self.geocoding_url, params=params, headers=headers, timeout=self.timeout)

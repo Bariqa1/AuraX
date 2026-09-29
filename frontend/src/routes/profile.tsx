@@ -6,7 +6,7 @@ import { localeSearch } from "@/lib/locale";
 
 const profile = {
   name: { ar: "أحمد العتيبي", en: "Ahmed Alotaibi" },
-  email: "demo@diraya.ai",
+  email: "demo@aurax.ai",
   role: { ar: "مسؤول السلامة", en: "Safety Officer" },
   facility: { ar: "المنشأة الصناعية الرئيسية", en: "Main Industrial Facility" },
   location: { ar: "الرياض، المملكة العربية السعودية", en: "Riyadh, Saudi Arabia" },
@@ -19,7 +19,7 @@ const copy = {
 
 export const Route = createFileRoute("/profile")({
   validateSearch: localeSearch,
-  head: () => ({ meta: [{ title: "الملف الشخصي | دِراية — DIRAYA" }, { name: "description", content: "معلومات حساب المستخدم وموقع العمل في دِراية." }, { property: "og:title", content: "Profile | DIRAYA" }, { property: "og:description", content: "DIRAYA user account and workplace information." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
+  head: () => ({ meta: [{ title: "الملف الشخصي | AuraX" }, { name: "description", content: "معلومات حساب المستخدم وموقع العمل في منصة AuraX." }, { property: "og:title", content: "Profile | AuraX" }, { property: "og:description", content: "AuraX user account and workplace information." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: Page,
 });
 

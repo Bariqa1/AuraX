@@ -534,7 +534,7 @@ def get_heat_stress_guidelines(topic: Optional[str] = "all") -> str:
                     "action": "عند ظهور أعراض الإجهاد الحراري: نقل المصاب فورًا لمكان بارد ومظلل، رفع القدمين قليلًا، تبريد الجسم برذاذ الماء البارد أو كمادات الثلج على الرقبة والإبطين والفخذين، وطلب الإسعاف فورًا (الهلال الأحمر 997) في حال الاشتباه بضربة شمس (فقدان وعي، جلد ساخن وجاف).",
                 },
             ],
-            "source": "Diraya Industrial Safety Manual & Saudi MHRSD Decision 3337",
+            "source": "AuraX Industrial Safety Manual & Saudi MHRSD Decision 3337",
         }
         return _json(guidelines)
     except Exception as exc:

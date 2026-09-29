@@ -6,9 +6,9 @@ import { localeSearch } from "@/lib/locale";
 export const Route = createFileRoute("/overview")({
   validateSearch: localeSearch,
   head: () => ({ meta: [
-    { title: "نظرة عامة | دِراية — DIRAYA" },
-    { name: "description", content: "مركز دِراية لمتابعة حالة السلامة والمخاطر والتنبيهات الحالية." },
-    { property: "og:title", content: "نظرة عامة | دِراية — DIRAYA" },
+    { title: "نظرة عامة | AuraX" },
+    { name: "description", content: "مركز AuraX لمتابعة حالة السلامة والمخاطر والتنبيهات الحالية." },
+    { property: "og:title", content: "Overview | AuraX" },
     { property: "og:description", content: "Safety status, active risks, and AI recommendations at a glance." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary" },

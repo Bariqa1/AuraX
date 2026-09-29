@@ -601,7 +601,7 @@ export function LiveMonitoringContent({
             <div className="border-t border-border bg-muted/30 p-2.5 px-4 text-center">
               <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-muted-foreground">
                 <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                {t.onlineStatus} — 4 {arabic ? "كاميرات متزامنة مع السيرفر" : "Cameras Synced with Diraya Pipeline"}
+                {t.onlineStatus} — 4 {arabic ? "كاميرات متزامنة مع السيرفر" : "Cameras Synced with AuraX Pipeline"}
               </span>
             </div>
           </div>
