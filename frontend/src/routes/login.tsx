@@ -2,8 +2,8 @@ import { useState, type FormEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { AlertCircle, ArrowLeft, ArrowRight, Check, Eye, EyeOff, Loader2, Lock, Mail } from "lucide-react";
 
-import industrialImage from "@/assets/diraya-industrial.jpg";
-import { DirayaWordmark } from "@/components/diraya-brand";
+import industrialImage from "@/assets/aurax-industrial.jpg";
+import { AuraXWordmark } from "@/components/aurax-brand";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
 import { isArabic, localeSearch } from "@/lib/locale";
@@ -106,7 +106,7 @@ function LoginPage() {
     setSubmitting(true);
     window.setTimeout(() => {
       const normalizedEmail = email.trim().toLowerCase();
-      if ((normalizedEmail === "demo@aurax.ai" || normalizedEmail === "demo@diraya.ai") && password === "Demo123!") {
+      if (normalizedEmail === "demo@aurax.ai" && password === "Demo123!") {
         navigate({ to: "/overview", search: { lang } });
         return;
       }
@@ -120,7 +120,7 @@ function LoginPage() {
       <aside className="relative hidden min-h-screen overflow-hidden bg-navy-deep text-navy-foreground lg:flex lg:flex-col lg:justify-between lg:p-12 xl:p-16">
         <img src={industrialImage} alt="" width={1600} height={1000} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,color-mix(in_oklch,var(--navy-deep)_72%,transparent),color-mix(in_oklch,var(--navy-deep)_86%,transparent))]" />
-        <DirayaWordmark locale={lang} variant="white" className="relative text-navy-foreground" />
+        <AuraXWordmark locale={lang} variant="white" className="relative text-navy-foreground" />
         <div className="relative max-w-lg animate-fade-up">
           <div className="mb-5 h-px w-16 bg-safety" />
           <h1 className={arabic ? "font-arabic text-4xl font-bold leading-tight" : "font-display text-4xl font-bold leading-tight"}>{copy.visualTitle}</h1>
@@ -142,7 +142,7 @@ function LoginPage() {
         </div>
 
         <div className="mx-auto flex w-full max-w-md flex-1 flex-col justify-center py-12">
-          <DirayaWordmark locale={lang} variant="navy" compact className="mb-10 text-foreground lg:hidden" />
+          <AuraXWordmark locale={lang} variant="navy" compact className="mb-10 text-foreground lg:hidden" />
           <div className="animate-fade-up">
             <h2 className={arabic ? "font-arabic text-3xl font-bold text-foreground" : "font-display text-3xl font-bold text-foreground"}>{copy.title}</h2>
             <p className="mt-2 text-sm text-muted-foreground">{copy.subtitle}</p>

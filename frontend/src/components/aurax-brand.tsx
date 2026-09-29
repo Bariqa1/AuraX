@@ -3,10 +3,10 @@ import type { Locale } from "@/lib/locale";
 
 export type LogoVariant = "navy" | "white" | "auto";
 
-export function DirayaMark({
+export function AuraXMark({
   className,
   variant = "navy",
-  alt = "شعار AuraX",
+  alt = "AuraX Logo",
 }: {
   className?: string;
   variant?: LogoVariant;
@@ -62,7 +62,7 @@ export function DirayaMark({
   );
 }
 
-export function DirayaWordmark({
+export function AuraXWordmark({
   locale,
   compact = false,
   arabicFont = "font-arabic",
@@ -79,7 +79,7 @@ export function DirayaWordmark({
 
   return (
     <div className={cn("flex items-center gap-3", className)}>
-      <DirayaMark variant={variant} className="size-11" />
+      <AuraXMark variant={variant} className="size-11" />
       <div className="leading-none">
         <p className={cn("font-display text-xl font-bold tracking-tight", arabic && arabicFont)}>
           AuraX
@@ -93,6 +93,3 @@ export function DirayaWordmark({
     </div>
   );
 }
-
-export const AuraXMark = DirayaMark;
-export const AuraXWordmark = DirayaWordmark;

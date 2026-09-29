@@ -16,28 +16,22 @@ Do not invent AuraX-specific incidents, statistics, alerts, predictions, or data
 When AuraX-specific data is not available, clearly state that you are answering based on general safety knowledge.
 For potentially dangerous situations, prioritize immediate safety actions and recommend contacting the appropriate site safety/emergency personnel.`;
 
-export const DIRAYA_BASE_PROMPT = AURAX_BASE_PROMPT;
-
-export type DirayaContextBlock = {
+export type AuraXContextBlock = {
   /** Short label, e.g. "Live detections" */
   label: string;
   /** Serialized content to give the model. */
   content: string;
 };
 
-export type AuraXContextBlock = DirayaContextBlock;
-
 /**
  * Returns the context blocks available for the current request.
  * Currently empty: no live AuraX data is connected yet.
  */
-export async function loadDirayaContext(): Promise<DirayaContextBlock[]> {
+export async function loadAuraXContext(): Promise<AuraXContextBlock[]> {
   return [];
 }
 
-export const loadAuraXContext = loadDirayaContext;
-
-export function buildSystemPrompt(blocks: DirayaContextBlock[]): string {
+export function buildSystemPrompt(blocks: AuraXContextBlock[]): string {
   if (blocks.length === 0) {
     return `${AURAX_BASE_PROMPT}\n\nNo live AuraX project data (detections, alerts, incidents, analytics, risk zones) is connected to you in this version. If the user asks about current AuraX-specific data, say that live project data is not connected yet and offer general safety guidance instead.`;
   }
@@ -45,4 +39,3 @@ export function buildSystemPrompt(blocks: DirayaContextBlock[]): string {
   const context = blocks.map((block) => `## ${block.label}\n${block.content}`).join("\n\n");
   return `${AURAX_BASE_PROMPT}\n\nUse only the AuraX data below when answering AuraX-specific questions:\n\n${context}`;
 }
-

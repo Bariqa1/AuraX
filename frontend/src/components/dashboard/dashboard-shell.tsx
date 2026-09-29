@@ -16,7 +16,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { DirayaMark } from "@/components/diraya-brand";
+import { AuraXMark } from "@/components/aurax-brand";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/lib/locale";
 import { dashboardNav, type DashboardPath } from "./dashboard-data";
@@ -154,7 +154,7 @@ export function DashboardShell({
 
 function DashboardMark({ className }: { className?: string }) {
   return (
-    <DirayaMark variant="auto" className={cn("size-10", className)} />
+    <AuraXMark variant="auto" className={cn("size-10", className)} />
   );
 }
 

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { buildSystemPrompt, loadDirayaContext } from "@/lib/ai/diraya-prompt.server";
+import { buildSystemPrompt, loadAuraXContext } from "@/lib/ai/aurax-prompt.server";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
 
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/api/chat")({
           return new Response("Missing LOVABLE_API_KEY", { status: 500 });
         }
 
-        const systemPrompt = buildSystemPrompt(await loadDirayaContext());
+        const systemPrompt = buildSystemPrompt(await loadAuraXContext());
 
         const upstream = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
           method: "POST",

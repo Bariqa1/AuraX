@@ -22,8 +22,8 @@ import {
   Users,
 } from "lucide-react";
 
-import heroFactory from "@/assets/diraya-hero-factory.jpg";
-import { DirayaMark } from "@/components/diraya-brand";
+import heroFactory from "@/assets/aurax-hero-factory.jpg";
+import { AuraXMark } from "@/components/aurax-brand";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
 import { isArabic, localeSearch, type Locale } from "@/lib/locale";
@@ -76,8 +76,8 @@ const copy = {
       body: "تهدف منصة AuraX إلى اكتشاف مؤشرات الخطر مبكرًا، وفهمها وتحليلها، للمساعدة على اتخاذ إجراءات وقائية قبل وقوع الحوادث.",
       reactiveLabel: "بدون AuraX",
       reactive: ["حادث", "تحقيق", "إجراء"],
-      dirayaLabel: "AuraX",
-      diraya: ["رصد", "فهم وتحليل", "تنبؤ", "وقاية"],
+      auraxLabel: "AuraX",
+      auraxSteps: ["رصد", "فهم وتحليل", "تنبؤ", "وقاية"],
     },
     goals: {
       title: "أهدافنا",
@@ -157,8 +157,8 @@ const copy = {
       body: "AuraX aims to detect early warning signs, understand and analyze them, helping take preventive actions before incidents occur.",
       reactiveLabel: "Reactive safety",
       reactive: ["Incident", "Investigation", "Action"],
-      dirayaLabel: "AuraX",
-      diraya: ["Detection", "Understanding & Analysis", "Prediction", "Prevention"],
+      auraxLabel: "AuraX",
+      auraxSteps: ["Detection", "Understanding & Analysis", "Prediction", "Prevention"],
     },
     goals: {
       title: "Our Goals",
@@ -253,7 +253,7 @@ function LandingPage() {
       <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2.5 text-navy">
-            <DirayaMark variant="navy" className="size-11" />
+            <AuraXMark variant="navy" className="size-11" />
             <span className={cn("font-display text-xl font-bold", arabic && "font-tajawal")}>AuraX</span>
           </div>
           <nav className="hidden items-center gap-1 md:flex">
@@ -314,7 +314,7 @@ function LandingPage() {
               {arabic ? "نظام ذكي للسلامة الصناعية" : "Smart system for industrial safety"}
             </div>
             <div className="mt-6 flex items-center gap-4">
-              <DirayaMark variant="white" className="size-12" />
+              <AuraXMark variant="white" className="size-12" />
               <p className={cn(heading, "text-2xl")}>AuraX</p>
             </div>
             <h1 className={cn(heading, "mt-6 text-4xl leading-tight sm:text-6xl")}>{t.hero.headline}</h1>
@@ -416,21 +416,21 @@ function LandingPage() {
               </div>
             </div>
             <div className="rounded-xl border border-primary/25 bg-primary/5 p-6">
-              <p className="text-xs font-bold uppercase tracking-wide text-primary">{t.vision.dirayaLabel}</p>
+              <p className="text-xs font-bold uppercase tracking-wide text-primary">{t.vision.auraxLabel}</p>
               <div className="mt-4 flex flex-wrap items-center gap-2">
-                {t.vision.diraya.map((step, index) => (
+                {t.vision.auraxSteps.map((step, index) => (
                   <div key={step} className="flex items-center gap-2">
                     <span
                       className={cn(
                         "rounded-md px-3 py-2 text-sm font-bold",
-                        index === t.vision.diraya.length - 1
+                        index === t.vision.auraxSteps.length - 1
                           ? "bg-positive/12 text-positive-deep"
                           : "bg-card text-foreground shadow-sm",
                       )}
                     >
                       {step}
                     </span>
-                    {index < t.vision.diraya.length - 1 ? <Arrow className="size-4 text-safety" /> : null}
+                    {index < t.vision.auraxSteps.length - 1 ? <Arrow className="size-4 text-safety" /> : null}
                   </div>
                 ))}
               </div>
@@ -541,7 +541,7 @@ function LandingPage() {
       {/* FINAL CTA */}
       <section className="bg-navy py-20 text-navy-foreground">
         <div className="mx-auto w-full max-w-[1280px] px-4 text-center sm:px-6 lg:px-10">
-          <DirayaMark variant="white" className="mx-auto size-16" />
+          <AuraXMark variant="white" className="mx-auto size-16" />
           <h2 className={cn(heading, "mt-6 text-3xl sm:text-4xl")}>{t.cta.title}</h2>
           <p className="mt-3 text-base text-navy-foreground/75">{t.cta.body}</p>
           <Button

@@ -453,7 +453,7 @@ export function AnalyticsContent({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      {/* DIRAYA insights */}
+      {/* AuraX insights */}
       <section className="rounded-lg border border-ai-border bg-ai-surface p-4 text-ai-foreground shadow-sm sm:p-5">
         <div className="flex items-center gap-2">
           <span className="flex size-8 items-center justify-center rounded-md bg-ai-panel text-ai-accent"><Sparkles className="size-4" /></span>
