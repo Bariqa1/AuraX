@@ -8,7 +8,7 @@
 [![YOLOv11](https://img.shields.io/badge/YOLOv11-Edge_Vision_AI-00FFFF?style=flat-square&logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![Google Gemini](https://img.shields.io/badge/Google_Gemini-Agentic_AI-8E75C2?style=flat-square&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![Regulatory Compliance](https://img.shields.io/badge/Compliance-MHRSD_3337_%7C_ISO_7243-006C35?style=flat-square)](https://hrsd.gov.sa/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg?style=flat-square)](LICENSE)
 
 AuraX is an enterprise-grade autonomous, multi-agent AI platform engineered for real-time industrial safety management, occupational hazard mitigation, and intelligent video surveillance. Designed for manufacturing plants, construction megaprojects, and energy infrastructure, AuraX transforms workplace safety from reactive incident investigation into proactive, continuous detection, prediction, and automated hazard prevention.
 
@@ -345,6 +345,8 @@ AuraX/
 
 ---
 
-## License
+## License & Copyright
 
-This project is licensed under the terms of the **MIT License**. See the [LICENSE](LICENSE) file for details.
+Copyright (c) 2026 AuraX. All Rights Reserved.
+
+This repository and its codebase are published for demonstration and evaluation purposes only. No part of this software, source code, models, or documentation may be reproduced, distributed, transmitted, modified, sublicensed, or used for commercial purposes without prior explicit written permission from AuraX.
