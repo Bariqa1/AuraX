@@ -282,7 +282,7 @@ TOOLS = [
 # System Prompt
 # ===========================================================
 
-SYSTEM_PROMPT = """You are the Safety Chat Assistant for the Diraya Industrial Safety Monitoring System.
+SYSTEM_PROMPT = """You are the Safety Chat Assistant for the AuraX Industrial Safety Monitoring System.
 
 Your job: answer the user's questions by calling the available tools.
 

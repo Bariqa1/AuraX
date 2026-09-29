@@ -1,1 +1,1 @@
-"""Tests for Diraya Safety and Compliance Agent."""
+"""Tests for AuraX Safety and Compliance Agent."""

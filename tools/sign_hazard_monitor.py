@@ -1,4 +1,4 @@
-"""Safety Signboard Reader & Dynamic Hazard Zone Generator for DIRAYA.
+"""Safety Signboard Reader & Dynamic Hazard Zone Generator for AuraX.
 
 Solves two core challenges:
   1. Token & Cost Efficiency: One-shot scan + local persistent caching (0 tokens on recurring frames).

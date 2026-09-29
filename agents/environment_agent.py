@@ -1,4 +1,4 @@
-"""Environment and Heat Stress Assessment Agent for DIRAYA.
+"""Environment and Heat Stress Assessment Agent for AuraX.
 
 Implements standard occupational safety formulas:
   - Stull's Equation for Wet-Bulb Temperature (Twb) estimation

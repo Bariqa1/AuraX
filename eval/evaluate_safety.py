@@ -111,7 +111,7 @@ def run_benchmark():
 
     # Print Console Report
     print("=" * 70)
-    print("   DIRAYA SAFETY & COMPLIANCE AGENT — BENCHMARK EVALUATION REPORT")
+    print("   AURAX SAFETY & COMPLIANCE AGENT — BENCHMARK EVALUATION REPORT")
     print("=" * 70)
     print(f"Scenarios Evaluated:         {total_cases}")
     print(f"Critical Hazard Recall:      {summary['critical_recall_pct']}% (Target: 100%)")

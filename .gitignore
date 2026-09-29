@@ -10,3 +10,5 @@ yolo*.pt
 .DS_Store
 *.mlpackage
 outputs/video_test7_output.mp4
+.netlify/
+frontend/.netlify/

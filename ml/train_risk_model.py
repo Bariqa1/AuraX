@@ -1,4 +1,4 @@
-"""Train a risk model from Diraya historical events."""
+"""Train a risk model from AuraX historical events."""
 from __future__ import annotations
 
 import argparse

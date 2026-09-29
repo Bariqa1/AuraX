@@ -1,5 +1,5 @@
 """
-Batch processor for 4 live monitoring cameras in Diraya.
+Batch processor for 4 live monitoring cameras in AuraX.
 Cam-01 has the Signboard & Demolition Perimeter (Video 7).
 Cam-02, Cam-03, Cam-04 do NOT have signboards; they only show accurate person tracking & PPE detection.
 """

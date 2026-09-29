@@ -1,4 +1,4 @@
-"""Unit tests for the DIRAYA Environment Agent & Heat Stress Assessment."""
+"""Unit tests for the AuraX Environment Agent & Heat Stress Assessment."""
 import json
 import unittest
 from datetime import datetime

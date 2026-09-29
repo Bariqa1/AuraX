@@ -10,7 +10,7 @@ if img is None:
     img = np.zeros((720, 1280, 3), dtype=np.uint8)
 
 print("=" * 60)
-print("DIRAYA HARDWARE ACCELERATION BENCHMARK (MacBook Pro M-Series)")
+print("AURAX HARDWARE ACCELERATION BENCHMARK (MacBook Pro M-Series)")
 print("=" * 60)
 
 # 1. Native PyTorch on Apple Silicon GPU (MPS)

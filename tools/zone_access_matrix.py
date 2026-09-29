@@ -1,4 +1,4 @@
-"""Role-Based Zone Access Control & Dynamic Risk Scoring Engine for DIRAYA.
+"""Role-Based Zone Access Control & Dynamic Risk Scoring Engine for AuraX.
 
 Implements industrial physical RBAC (Role-Based Access Control):
 1. Role classification via standard helmet colors (OSHA / Saudi Aramco / SABIC standards).

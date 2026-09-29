@@ -181,8 +181,8 @@ AuraX features a 4-channel synchronized surveillance dashboard:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Bariqa1/AuraX_Agentx.git
-cd AuraX_Agentx
+git clone https://github.com/Bariqa1/AuraX.git
+cd AuraX
 ```
 
 ### 2. Backend Setup
@@ -238,7 +238,7 @@ pytest tests/ -v
 ## Repository Structure
 
 ```text
-AuraX_Agentx/
+AuraX/
 |-- agents/                  # Autonomous Agents (Compliance, Environment, Chat)
 |   |-- compliance_agent.py  # Visual compliance and geofence tracking
 |   |-- environment_agent.py # Weather and ISO 7243 WBGT computation

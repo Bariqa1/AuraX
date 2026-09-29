@@ -31,8 +31,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Safety Chat Assistant API",
-    description="Interactive conversational safety assistant for Diraya Hackathon",
+    title="AuraX Safety Assistant API",
+    description="Interactive conversational safety assistant for AuraX Autonomous Safety Platform",
     version="1.0.0",
     lifespan=lifespan,
 )
