@@ -1,4 +1,4 @@
-# DIRAYA
+# AuraX
 ### Autonomous Multi-Agent Industrial Safety and Video Surveillance Intelligence Platform
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
@@ -9,7 +9,7 @@
 [![Regulatory Compliance](https://img.shields.io/badge/Compliance-MHRSD_3337_%7C_ISO_7243-006C35?style=flat-square)](https://hrsd.gov.sa/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-DIRAYA is an autonomous, multi-agent AI platform engineered for real-time industrial safety management, occupational hazard mitigation, and intelligent video surveillance. It continuously inspects safety violations, enforces physical role-based access control (RBAC), calculates environmental heat stress, and dispatches automated countermeasures across manufacturing facilities, construction projects, and energy infrastructure.
+AuraX is an autonomous, multi-agent AI platform engineered for real-time industrial safety management, occupational hazard mitigation, and intelligent video surveillance. It continuously inspects safety violations, enforces physical role-based access control (RBAC), calculates environmental heat stress, and dispatches automated countermeasures across manufacturing facilities, construction projects, and energy infrastructure.
 
 ---
 
@@ -29,7 +29,7 @@ DIRAYA is an autonomous, multi-agent AI platform engineered for real-time indust
 
 ## Overview
 
-Industrial workplaces present severe, multifaceted hazards spanning machinery operations, high-voltage substations, suspended loads, and extreme thermal conditions. DIRAYA unifies specialized, cooperative AI agents with edge computer vision models to establish an autonomous safety barrier:
+Industrial workplaces present severe, multifaceted hazards spanning machinery operations, high-voltage substations, suspended loads, and extreme thermal conditions. AuraX unifies specialized, cooperative AI agents with edge computer vision models to establish an autonomous safety barrier:
 
 - **Personal Protective Equipment (PPE) Verification:** Sub-second detection of hard hats, high-visibility vests, protective footwear, face shields, and dielectric gloves.
 - **Physical Role-Based Access Control (RBAC):** Verification of worker qualifications via helmet color classification prior to entering high-risk operational zones.
@@ -41,7 +41,7 @@ Industrial workplaces present severe, multifaceted hazards spanning machinery op
 
 ## Problem and Solution
 
-| Operational Challenge | Traditional Approach | DIRAYA Autonomous Platform |
+| Operational Challenge | Traditional Approach | AuraX Autonomous Platform |
 | :--- | :--- | :--- |
 | **Fatigue in Visual Monitoring** | Human operators miss subtle violations across multiple CCTV feeds. | Continuous edge inference (YOLOv11) with sub-150ms latency across 4 synchronized camera channels. |
 | **Unauthorized Zone Infiltration** | Manual badges checked intermittently at primary site checkpoints. | Visual RBAC system mapping helmet colors to real-time zone permission matrices. |
@@ -52,7 +52,7 @@ Industrial workplaces present severe, multifaceted hazards spanning machinery op
 
 ## Multi-Agent System Architecture
 
-DIRAYA separates operational responsibilities into specialized autonomous agents that collaborate through shared context, structured schemas, and asynchronous event streaming:
+AuraX separates operational responsibilities into specialized autonomous agents that collaborate through shared context, structured schemas, and asynchronous event streaming:
 
 ```mermaid
 flowchart TD
@@ -137,7 +137,7 @@ flowchart TD
 
 ## Live Operations Center (4-Camera Grid)
 
-DIRAYA features a 4-channel synchronized surveillance dashboard:
+AuraX features a 4-channel synchronized surveillance dashboard:
 
 | Camera ID | Zone Name | Primary Risk Monitored | Operational Baseline |
 | :--- | :--- | :--- | :--- |
@@ -181,8 +181,8 @@ DIRAYA features a 4-channel synchronized surveillance dashboard:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Bariqa1/Diraya_Agentx.git
-cd Diraya_Agentx
+git clone https://github.com/Bariqa1/AuraX_Agentx.git
+cd AuraX_Agentx
 ```
 
 ### 2. Backend Setup
@@ -238,7 +238,7 @@ pytest tests/ -v
 ## Repository Structure
 
 ```text
-Diraya_Agentx/
+AuraX_Agentx/
 |-- agents/                  # Autonomous Agents (Compliance, Environment, Chat)
 |   |-- compliance_agent.py  # Visual compliance and geofence tracking
 |   |-- environment_agent.py # Weather and ISO 7243 WBGT computation
